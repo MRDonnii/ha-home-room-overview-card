@@ -1,4 +1,5 @@
-const ROOM_OVERVIEW_VERSION = "0.1.5";
+import "./ha-card-list-editor.js";
+const ROOM_OVERVIEW_VERSION = "0.2.0";
 
 class HaHomeRoomOverviewCard extends HTMLElement {
   static getStubConfig() {
@@ -9,6 +10,7 @@ class HaHomeRoomOverviewCard extends HTMLElement {
       ]
     };
   }
+  static getConfigElement(){const e=document.createElement("ha-card-list-editor");e.definition={roots:[{key:"title",label:"Titel"}],collections:[{key:"rooms",label:"Rum",itemLabel:"rum",defaults:{name:"Nyt rum",icon:"mdi:home-outline"},fields:[{key:"name",label:"Navn"},{key:"icon",label:"Ikon"},{key:"accent",label:"Accentfarve"},{key:"temperature",label:"Temperatur",type:"entity"},{key:"humidity",label:"Luftfugtighed",type:"entity"},{key:"light",label:"Lys",type:"entity"},{key:"presence",label:"Tilstedeværelse",type:"entity"},{key:"opening",label:"Vindue/dør",type:"entity"},{key:"alert.entity",label:"Advarsel",type:"entity"},{key:"alert.icon",label:"Advarselsikon"},{key:"popup",label:"Popup-id"}]}]};return e;}
   setConfig(config) {
     if (!config || !Array.isArray(config.rooms) || !config.rooms.length) throw new Error("rooms is required");
     this.config = config;

@@ -1,6 +1,6 @@
 {
   "name": "ha-home-room-overview-card",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "description": "Home Assistant Lovelace card: a whole-house room-by-room overview with temperature sparklines, presence, lights and quick actions.",
   "type": "module",
   "repository": {

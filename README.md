@@ -103,3 +103,4 @@ simply left blank on the tile when not configured.
 ## License
 
 MIT — see [LICENSE](LICENSE).
+The visual card editor provides entity pickers and add/remove controls for rooms.
