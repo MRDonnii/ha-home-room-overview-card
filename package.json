@@ -1,0 +1,24 @@
+{
+  "name": "ha-home-room-overview-card",
+  "version": "0.1.5",
+  "description": "Home Assistant Lovelace card: a whole-house room-by-room overview with temperature sparklines, presence, lights and quick actions.",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MRDonnii/ha-home-room-overview-card.git"
+  },
+  "keywords": [
+    "home-assistant",
+    "home-assistant-card",
+    "custom-card",
+    "lovelace",
+    "lovelace-card",
+    "dashboard",
+    "rooms",
+    "temperature",
+    "presence",
+    "overview"
+  ],
+  "author": "John Thorn Halle",
+  "license": "MIT"
+}
