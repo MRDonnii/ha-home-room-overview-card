@@ -2,6 +2,9 @@
 
 ![Preview](docs/preview.png)
 
+> HACS installs both JavaScript files automatically. For a manual installation,
+> copy `ha-home-room-overview-card.js` and `ha-card-list-editor.js` into the same folder.
+
 A Home Assistant Lovelace card that shows every room in the house as a tile:
 current temperature with a faint 24-hour sparkline behind it, humidity,
 presence, an open-window/door or custom alert flag, and a one-tap light
