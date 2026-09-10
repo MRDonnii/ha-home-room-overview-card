@@ -1,5 +1,5 @@
 import "./ha-card-list-editor.js";
-const ROOM_OVERVIEW_VERSION = "0.2.2";
+const ROOM_OVERVIEW_VERSION = "0.2.3";
 
 class HaHomeRoomOverviewCard extends HTMLElement {
   static getStubConfig() {
@@ -110,7 +110,7 @@ class HaHomeRoomOverviewCard extends HTMLElement {
 
     this.shadowRoot.innerHTML = `<style>
       :host{display:block;color:var(--primary-text-color);font-family:var(--paper-font-body1_-_font-family,Inter,system-ui,sans-serif)}
-      *{box-sizing:border-box}.shell{position:relative;overflow:hidden;padding:26px;border:1px solid color-mix(in srgb,var(--dashboard-border-neutral,var(--divider-color,rgba(255,255,255,.14))) 78%,transparent);border-radius:30px;background:radial-gradient(circle at 92% 3%,color-mix(in srgb,var(--dashboard-accent,var(--primary-color,#58aeff)) 13%,transparent),transparent 28%),var(--popupBG,var(--ha-card-background,var(--card-background-color,#1b1f27)));box-shadow:var(--dashboard-shadow-deep,0 20px 50px rgba(0,0,0,.25))}
+      *{box-sizing:border-box}.shell{position:relative;overflow:hidden;padding:26px;border:1px solid color-mix(in srgb,var(--dashboard-border-neutral,var(--divider-color,rgba(255,255,255,.14))) 78%,transparent);border-radius:30px;background:radial-gradient(circle at 92% 3%,color-mix(in srgb,var(--dashboard-accent,var(--primary-color,#58aeff)) 13%,transparent),transparent 28%),var(--dashboard-card-bg,var(--ha-card-background,var(--card-background-color,#1b1f27)));box-shadow:var(--dashboard-shadow-deep,0 20px 50px rgba(0,0,0,.25))}
       .shell:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.2;background-image:linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);background-size:42px 42px}
       header{position:relative;display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:23px}.eyebrow{display:flex;align-items:center;gap:9px;color:var(--dashboard-accent,var(--primary-color,#58aeff));font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase}.eyebrow i{width:8px;height:8px;border-radius:50%;background:var(--dashboard-success,var(--success-color,#4caf82));box-shadow:0 0 14px var(--dashboard-success,var(--success-color,#4caf82))}h1{margin:7px 0 3px;font-size:clamp(28px,3vw,43px);line-height:1.05;letter-spacing:-.045em}.subtitle{color:var(--secondary-text-color);font-size:14px}
       .summary{display:grid;grid-template-columns:repeat(4,minmax(82px,1fr));gap:9px}.sum{min-width:95px;padding:11px 13px;border:1px solid color-mix(in srgb,var(--dashboard-border-neutral,var(--divider-color,rgba(255,255,255,.14))) 65%,transparent);border-radius:15px;background:var(--contrast1,rgba(255,255,255,.045))}.sum span{display:block;color:var(--secondary-text-color);font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}.sum strong{display:block;margin-top:4px;font-size:18px}.sum.warn strong{color:var(--dashboard-warning,var(--warning-color,#ffb74d))}
