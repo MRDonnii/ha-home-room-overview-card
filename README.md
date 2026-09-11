@@ -56,6 +56,7 @@ in YAML:
 ```yaml
 type: custom:ha-home-room-overview-card
 title: All rooms
+desktop_columns: 4
 rooms:
   - name: Living room
     icon: mdi:sofa
@@ -85,6 +86,7 @@ simply left blank on the tile when not configured.
 | Key | Description |
 |---|---|
 | `title` | Card header text (default `Alle rum`) |
+| `desktop_columns` | Number of equal-width columns above 1100 px (2–6, default `4`). Smaller screens retain the automatic responsive grid. |
 | `rooms` | List of room objects, see below |
 
 ### Room object
